@@ -1,2 +1,2 @@
 # ProgrammingForInternet
-Projects I have made as part of Programming for internet course on college.
+Project I made as part of Programming for internet course on college. Task: Create simple web page using HTML, CSS and JavaScript.
