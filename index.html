@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>City News</title>
+    <link rel="stylesheet" href="styles/font-awesome.min.css"/>
+    <link rel="stylesheet" href="styles/DRstyle.css">
+  </head>
+  
+  <body>
+    <header>
+      <h1 id="header">City News</h1>
+    </header>
+    
+    <main>
+	  	<nav>
+			<div>
+			  <a class="nav-link" href="">Home</a>
+			  <a class="nav-link" href="">Log in</a>
+			</div>
+			<div class="breadcrumb">
+			 <a class="nav-link" href="">Home</a> &gt;
+			 <a class="nav-link" href="">Cars</a>
+			</div>
+     	</nav>
+	  
+	  	<div id="right-container">
+			<a href="#" id="add-news"><strong>Add News</strong></a>
+			<ul class="in-this-category">
+				<li class="subtitle"><strong>In this category</strong></li>	
+			</ul>
+
+			<i class="fa fa-plus-square fa-2x plus-add-link" aria-hidden="true"></i>
+				
+			<ul class="comment-container">
+				<li class="subtitle">Comments</li>
+			</ul>
+	  	</div>
+	  
+    	<div id="left-container">
+    	</div>
+	  
+	  	<div id="bottom-container">
+				<p class="recommended"> Cars recommended for you </p>
+				<img class="recommended-image" src="images/golf.jpg" alt="golf" style="margin-left: 16rem; width:350px; height:350px;">
+				<img class="recommended-image" src="images/fiat.jpg" alt="fiat">
+				<img class="recommended-image" src="images/opel.jpg" alt="opel">		
+	  	</div>
+  	</main>
+    
+	<footer>
+		Copyright - Bruno Vukasovic
+	</footer>
+	
+	<script type="text/HTML" id="article-template">
+		<article class="article">
+			<i class="fa fa-times-circle fa-2x delete-button" aria-hidden="true" ></i>
+			<img class="article-image" src="{{articleImageURL}}" alt="{{articleImageTitle}}" />
+			<i class="fa fa-star fa-2x star" aria-hidden="true"></i>
+        	<i class="fa fa-star fa-2x star" aria-hidden="true"></i>
+        	<i class="fa fa-star fa-2x star" aria-hidden="true"></i>
+		  	<i class="fa fa-star fa-2x star" aria-hidden="true"></i>
+		  	<i class="fa fa-star fa-2x star" aria-hidden="true"></i>
+			<h2 class="article-title"> {{articleTitle}} </h2>
+			<a href="#" class ="comment">Comment</a>
+		</article>	
+	</script>
+	
+	<script type="text/HTML" id="links-template">
+		<li class="news-item"><a class="news-item-link" href="{{linkURL}}">{{linkTitle}}</a></li>
+	</script>
+	
+	<script type="text/HTML" id="comment-template">
+		<li class="commentatorName"><strong>{{commentatorName}}</strong></li>
+		<i class="commentedArticle"><strong>{{commentedArticle}}</strong></br> </li>
+		<i class="commentatorComment">{{commentatorComment}}</i>
+	</script>
+	
+	<script src="scripts/mustache.min.js"></script>
+	<script src="scripts/jquery-3.1.1.min.js"></script>
+	<script src="scripts/script.js"></script>
+  </body>
+  
+</html>
